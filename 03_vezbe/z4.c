@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
     unsigned long duzina_linije = 0;
     while (getline(&linija, &duzina_linije, f) != -1)
     {
-        // cistimpo celu liniju od '\n' da ne bismo posle u tokenu proveravali
+        // cistimo celu liniju od '\n' da ne bismo posle u tokenu proveravali
         linija[strcspn(linija, "\r\n")] = '\0';
         char *kopija = strdup(linija);
 
@@ -50,6 +50,7 @@ int main(int argc, char *argv[])
         // Iteriramo kroz ostale tokene
         while (token != NULL)
         {
+	    // posto smo ocistili celu liniju, ovo vise nije potrebno
             // if (token[strlen(token) - 1] == '\n')
             //     token[strlen(token) - 1] = '\0';
 
