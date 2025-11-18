@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
         // Iteriramo kroz ostale tokene
         while (token != NULL)
         {
-	    // posto smo ocistili celu liniju, ovo vise nije potrebno
+            // posto smo ocistili celu liniju, ovo vise nije potrebno
             // if (token[strlen(token) - 1] == '\n')
             //     token[strlen(token) - 1] = '\0';
 
